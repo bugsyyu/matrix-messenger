@@ -75,6 +75,10 @@ abeto Messenger 真正是: **Svelte 5 + Three.js WebGL** 客户端 + **uWebSocke
 - [x] **README.md** (2026-06-16 19:35) — 项目介绍 + 5 截图(docs/screens/)+ 跑法 + 架构 ASCII + 协议表 + 物理常数表 + agent SDK quickstart + repo layout + test 章节。强调 ontology + abeto‑alias seam,标"无 abeto 代码包含" 出处声明。
 - [x] `npm test` 一键 pipeline:`scripts/run-e2e.sh` 起临时 server :3007 → 跑 e2e + agent SDK,完赛 trap kill。28 assertions 全过(14 ontology + 8 ws + 6 sdk)。
 - [x] 截图迁移到 `docs/screens/`(README 引用稳定路径,与 research/visual 解耦)。
-- [ ] 部署脚本(Dockerfile / fly.toml / Cloud Run yaml)。
+- [x] **Dockerfile + .dockerignore + fly.toml** (2026-06-16 19:50):
+  - Multi-stage Node 24 slim:builder 装全 deps + `vite build` + 跑 ontology test;runtime 仅 prod deps + dist/ + server,non-root user。
+  - 镜像 **91.8 MB**(content size),build 后 `docker run` 2s 启动,`/healthz` `/ontology` 200,e2e 8/8 + agent 6/6 在容器内全过。
+  - WSL2 docker daemon stale lock 修了一次:`reset-failed docker.service && start`。
+  - fly.toml:`internal_port 3005` + `/healthz` check + `auto_stop_machines` + 256MB VM。
 - [ ] favicon SVG。
 - [ ] 性能压测:50 peers / room 看 latency。

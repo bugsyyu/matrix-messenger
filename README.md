@@ -50,6 +50,27 @@ npm start            # server serves dist/ AND ws on the same :3005
 The server already binds `0.0.0.0`, so it's container‑ready out of the box.
 `PORT=8080 npm start` to override.
 
+### Docker
+
+```bash
+docker build -t matrix-messenger .
+docker run -d -p 3005:3005 --name mm matrix-messenger
+curl http://localhost:3005/healthz
+```
+
+The image is ~92 MB (multi‑stage; vite + playwright don't make it into the
+runtime). Runs as non‑root user `matrix` and self‑checks `/healthz`.
+
+### Fly.io
+
+```bash
+fly launch --copy-config       # uses fly.toml verbatim
+fly deploy                     # later
+```
+
+`fly.toml` ships with `internal_port = 3005`, a `/healthz` http check, and
+`auto_stop_machines = "stop"` so an idle world doesn't burn credits.
+
 ---
 
 ## Architecture

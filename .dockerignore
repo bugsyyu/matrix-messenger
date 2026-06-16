@@ -1,0 +1,32 @@
+# VCS
+.git
+.gitignore
+
+# build outputs (rebuilt inside the image)
+dist
+node_modules
+**/node_modules
+
+# dev-only stuff
+research
+docs
+.monitor
+PROGRESS.md
+README.md
+
+# OS / editor cruft
+.DS_Store
+.vscode
+.idea
+*.log
+*.swp
+.cache
+.vite
+
+# tests + screenshots (kept out of the runtime image)
+playwright-report
+test-results
+
+# env
+.env
+.env.local

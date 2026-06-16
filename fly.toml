@@ -1,0 +1,36 @@
+# fly.io deploy config — `fly launch --copy-config` to use as-is,
+# or `fly deploy` once the app is created.
+
+app = "matrix-messenger"
+primary_region = "ord"      # change to your preferred fly region
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  NODE_ENV = "production"
+  PORT     = "3005"
+  HOST     = "0.0.0.0"
+
+[http_service]
+  internal_port = 3005
+  force_https   = true
+  auto_stop_machines  = "stop"     # idle → halt to save credits
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
+
+  [[http_service.checks]]
+    interval     = "30s"
+    timeout      = "3s"
+    grace_period = "5s"
+    method       = "get"
+    path         = "/healthz"
+
+# WebSocket needs the connection to stay open across the proxy.
+# Fly's http_service handles ws upgrade transparently; no extra config needed.
+
+[[vm]]
+  cpu_kind = "shared"
+  cpus     = 1
+  memory   = "256mb"
