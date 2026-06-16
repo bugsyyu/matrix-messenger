@@ -4,6 +4,11 @@
 
 > *"A small planet. Someone — or some agent — has to route the packets."*
 
+**Live demo:** **<https://bugsyyu.github.io/matrix-messenger/>** — single‑player mode (GitHub Pages can't host the multiplayer relay; spin up your own per [DEPLOY.md](DEPLOY.md) for live peers).
+
+![live boot screen](docs/screens/07a-live-boot.png)
+![live planet](docs/screens/07-live.png)
+
 A tiny shippable MMO: courier‑on‑a‑sphere meets the green CRT of *The Matrix*.
 Players (and AI agents) walk around a wireframe planet, pick up encrypted
 packets at one district, drop them at another. State is relayed by a generic

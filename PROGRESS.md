@@ -93,3 +93,17 @@ abeto Messenger 真正是: **Svelte 5 + Three.js WebGL** 客户端 + **uWebSocke
   - 客户端进程堆 Δ **1.72 MB**(含 50 个 ws + 9506 sample 缓冲)。
   - 通过阈值 P95<50ms(实际 P95 0.03×阈值)。
   - 命令:`PEERS=50 STEADY_MS=10000 node scripts/loadtest.mjs`,exit 0 = pass。
+
+## 阶段 6 公开上线 (2026-06-16 20:30)
+
+- **Live demo: <https://bugsyyu.github.io/matrix-messenger/>** — 真公网 URL,可分享。
+- 路径选择(诚实记录):
+  - Fly.io 尝试 — flyctl 装好 v0.4.59,但 headless WSL 无浏览器 OAuth + 没 fly access token → **跳过**(写进 DEPLOY.md 给买家用)。
+  - GitHub Pages — gh CLI 已认证 bugsyyu,**真路径走通**:`gh repo create matrix-messenger --public --source=. --push` → 启 Pages workflow → 90s build → live。
+- 客户端改造让 Pages 静态托管可用:
+  - `client/vite.config.mjs` 读 `VITE_BASE` env,Pages workflow 注入 `/matrix-messenger/`,Vite 自动重写所有 `<link>`/`<script>`/`<meta property="og:image">` 路径(实测正确,远端 HTML 含 `/matrix-messenger/screens/social.png`)。
+  - `client/src/main.js` 读 `?ws=<url>` 查询参数 → Pages 静态可指向独立部署的 relay (e.g. Fly)。
+  - 4s 内无 relay 响应 → 优雅 offline mode(HUD `#offline` 徽章 + 终端提示 + 不再 reconnect 风暴)。其余单机功能(行星/球面行走/quest pickup/slash 命令/agent SDK as static)全活,真截图 `docs/screens/07-live.png` 证实。
+- `.github/workflows/pages.yml`:Node 24 + `npm ci` + `VITE_BASE=/<repo>/` + 404.html SPA fallback + `actions/deploy-pages@v4`。第一次 push 90s 内全绿。
+- `DEPLOY.md`:三条买家可复制路径 — A. GitHub Pages(前端 only)/ B. Fly.io(全栈)/ C. 自管 Docker host。含 post-deploy 5 命令 smoke 脚本(健康检查 + ontology + agent-sdk + ws 握手)。
+- `scripts/verify-live.mjs`:Playwright 真访 live URL,2 截图作证 `docs/screens/{07a-live-boot.png, 07-live.png}`,零运行时错误(只有预期 ws 404)。
