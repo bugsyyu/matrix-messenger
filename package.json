@@ -17,6 +17,7 @@
     "test:ontology": "node server/src/ontology.test.mjs",
     "test:e2e": "bash scripts/run-e2e.sh",
     "test:payment": "bash payment-protocol/test/run-all.sh",
+    "test:payment:fuzz": "node payment-protocol/test/fuzz.test.mjs",
     "demo:payment": "node payment-protocol/demo/client.mjs"
   },
   "dependencies": {

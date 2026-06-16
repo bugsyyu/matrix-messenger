@@ -14,4 +14,7 @@ echo
 echo "=== trust score ==="
 node test/trust.test.mjs
 echo
+echo "=== fuzz harness (5000 rounds, seeded) ==="
+node test/fuzz.test.mjs
+echo
 echo "ALL PAYMENT-PROTOCOL TESTS PASS"

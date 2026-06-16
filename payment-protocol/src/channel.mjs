@@ -7,6 +7,7 @@
 // Each Transfer is a fully signed snapshot { seq, balances }. Both parties keep
 // the latest fully-signed snapshot they've seen; whichever has the higher seq
 // wins on settlement.
+import crypto from 'node:crypto';
 import { sign, verify, canonicalize, hashState } from './crypto.mjs';
 import { WORLD } from './ontology.mjs';
 
@@ -18,8 +19,9 @@ export const STATE = Object.freeze({
   SETTLED:  'SETTLED',
 });
 
-let _nonce = 0;
-const newNonce = () => _nonce++;
+// SECURITY #11: use a random 64-bit nonce so channel IDs survive process
+// restart without colliding with previously-settled entries in any arbiter.
+const newNonce = () => crypto.randomBytes(8).toString('hex');
 
 export class Channel {
   constructor({ partyA, partyB, depositA, depositB, asset = 'micro', nonce }) {
@@ -59,6 +61,13 @@ export class Channel {
     if (this.state !== STATE.OPEN) throw new Error(`channel not open (state=${this.state})`);
     const a = this.parties[sender], b = this.parties[recipient];
     if (!a || !b) throw new Error('unknown party on channel');
+    if (sender === recipient) throw new Error('sender and recipient must differ');
+    // SECURITY #8: reject non-positive amounts BEFORE the sufficient-balance check.
+    // A negative amount would otherwise pass `curBal[sender] < amount` and silently
+    // move value from recipient to sender.
+    if (!Number.isFinite(amount) || amount <= 0 || !Number.isInteger(amount)) {
+      throw new Error(`amount must be a positive integer, got ${amount}`);
+    }
     const curBal = this.latest.balances;
     if (curBal[sender] < amount) throw new Error(`sender insufficient: have ${curBal[sender]}, need ${amount}`);
     const balances = {
