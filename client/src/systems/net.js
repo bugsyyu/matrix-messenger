@@ -23,6 +23,7 @@ export class MatrixNet extends EventTarget {
   }
 
   connect() {
+    if (this._stopped) return;
     if (this.ws && this.ws.readyState <= 1) return;
     try {
       this.ws = new WebSocket(this.url);
@@ -48,6 +49,7 @@ export class MatrixNet extends EventTarget {
   }
 
   disconnect() {
+    this._stopped = true;
     if (!this.ws) return;
     try { this.ws.close(); } catch {}
     this.ws = null;
@@ -55,6 +57,7 @@ export class MatrixNet extends EventTarget {
   }
 
   _scheduleReconnect() {
+    if (this._stopped) return;
     const delay = Math.min(8000, 500 * 2 ** this.reconnectAttempt++);
     setTimeout(() => this.connect(), delay);
   }

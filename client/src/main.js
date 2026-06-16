@@ -120,10 +120,31 @@ async function main() {
   document.getElementById('hud').classList.remove('hidden');
   document.getElementById('hud-id').textContent = state.tag;
 
-  // net
-  const wsUrl = (location.protocol === 'https:' ? 'wss://' : 'ws://') + location.host + '/ws';
+  // net — allow override via ?ws=<url>, useful when client is on GitHub Pages
+  // and the relay is somewhere else; default to same-origin /ws.
+  const params  = new URLSearchParams(location.search);
+  const wsParam = params.get('ws');
+  const wsUrl   = wsParam
+    || (location.protocol === 'https:' ? 'wss://' : 'ws://') + location.host + '/ws';
+
   const net = new MatrixNet({ url: wsUrl, roomPrefix: 'matrix', room: 'zion' });
   net.localData.tag = state.tag;
+
+  let netGaveUp = false;
+  let firstErrorAt = 0;
+  net.addEventListener('error', (e) => {
+    if (netGaveUp) return;
+    firstErrorAt ||= Date.now();
+    // If we can't reach a relay within 4s, declare offline mode and stop spamming.
+    if (Date.now() - firstErrorAt > 4000) {
+      netGaveUp = true;
+      net.disconnect();
+      term.err('[net] no relay reachable — running in OFFLINE mode (single-player).');
+      term.sys('[net] start a server (npm start) or pass ?ws=<wss://your-relay/ws> in the URL.');
+      document.getElementById('hud-id').textContent = `${state.tag}#offline`;
+      document.getElementById('hud-peers').textContent = '—';
+    }
+  });
   net.connect();
   net.addEventListener('id', (e) => {
     document.getElementById('hud-id').textContent = `${state.tag}#${e.detail}`;

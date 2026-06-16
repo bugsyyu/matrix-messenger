@@ -4,8 +4,13 @@ import path from 'node:path';
 const root = path.resolve(import.meta.dirname);
 const repoRoot = path.resolve(root, '..');
 
+// `VITE_BASE` lets the GitHub Pages workflow inject /<repo>/ at build time
+// without touching this file; defaults to '/' for local dev and the server.
+const base = process.env.VITE_BASE || '/';
+
 export default defineConfig({
   root,
+  base,
   publicDir: path.resolve(repoRoot, 'public'),
   server: {
     host: '0.0.0.0',
