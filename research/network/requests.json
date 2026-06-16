@@ -1,0 +1,930 @@
+[
+  {
+    "t": 1781631621596,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/",
+    "resourceType": "document",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631622554,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/webgl-C4v7tvuW.js",
+    "resourceType": "script",
+    "status": 200,
+    "size": 2261
+  },
+  {
+    "t": 1781631622554,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/runtime-C2kxzoFi.js",
+    "resourceType": "script",
+    "status": 200,
+    "size": 6006
+  },
+  {
+    "t": 1781631622555,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/style-BgpnrCnL.css",
+    "resourceType": "stylesheet",
+    "status": 200,
+    "size": 310
+  },
+  {
+    "t": 1781631622555,
+    "method": "GET",
+    "url": "https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447",
+    "resourceType": "script",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631622847,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/App3D-BLRWK1h9.js",
+    "resourceType": "script",
+    "status": 200,
+    "size": 396656
+  },
+  {
+    "t": 1781631623665,
+    "method": "POST",
+    "url": "https://messenger.abeto.co/cdn-cgi/rum?",
+    "resourceType": "xhr",
+    "status": 204,
+    "size": 0
+  },
+  {
+    "t": 1781631623862,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/music/bgmusic-highq.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 2310818
+  },
+  {
+    "t": 1781631623863,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/intro/letters.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 8302
+  },
+  {
+    "t": 1781631623864,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/intro/button-turn.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 2241
+  },
+  {
+    "t": 1781631623864,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/intro/button-out.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 5863
+  },
+  {
+    "t": 1781631623864,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/intro/rune1.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 1755
+  },
+  {
+    "t": 1781631623864,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/intro/rune2.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 1843
+  },
+  {
+    "t": 1781631623864,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/intro/rune3.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 1783
+  },
+  {
+    "t": 1781631623864,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/intro/rune4.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 1700
+  },
+  {
+    "t": 1781631623864,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/ambiances/base.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 84671
+  },
+  {
+    "t": 1781631623864,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/ambiances/forest.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 83898
+  },
+  {
+    "t": 1781631623864,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/ambiances/city.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 86118
+  },
+  {
+    "t": 1781631623864,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/ambiances/factory.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 85410
+  },
+  {
+    "t": 1781631623864,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/ambiances/beach.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 85758
+  },
+  {
+    "t": 1781631623866,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/ambiances/waterfalls.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 85028
+  },
+  {
+    "t": 1781631623866,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/ambiances/temple.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 96209
+  },
+  {
+    "t": 1781631623866,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/character/footsteps4.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 40929
+  },
+  {
+    "t": 1781631623866,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/character/footsteps-water.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 39370
+  },
+  {
+    "t": 1781631623866,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/character/jump-start.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 1470
+  },
+  {
+    "t": 1781631623866,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/character/jump-land.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 1914
+  },
+  {
+    "t": 1781631623866,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/character/emoji-starts1.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 2522
+  },
+  {
+    "t": 1781631623866,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/character/emoji-starts2.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 2582
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/character/emoji-starts3.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 2538
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/character/emoji-ends1.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 2516
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/character/emoji-ends2.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 2540
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/character/emoji-ends3.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 2514
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/character/clothes.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 2989
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/camera/zoom-off-5.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 6334
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/camera/zoom-in-5.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 6705
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/camera/whoosh2.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 8129
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/ui/title.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 41102
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/ui/buttons2.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 4199
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/ui/hover2.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 1093
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/ui/click2.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 2091
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/ui/click3.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 3442
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/ui/openbox1.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 1731
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/ui/openbox2.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 2644
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/ui/openbox-emote.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 4043
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/ui/openbox-checklist.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 4583
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/ui/paper1.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 39101
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/ui/paper4.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 63533
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/ui/customize.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 6609
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/ui/quest-complete.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 23245
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/dialogues/quest.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 31496
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/dialogues/male1.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 39246
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/dialogues/male2.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 34948
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/dialogues/male3.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 39643
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/dialogues/female1.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 41978
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/dialogues/female2.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 42223
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/dialogues/female3.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 43148
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/dialogues/wtf.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 26920
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/character/bubble-starts.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 2536
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/character/bubble-ends.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 2517
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/audio/music/musician.ogg",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 98442
+  },
+  {
+    "t": 1781631623867,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/ui/sidebuttons/list.icon",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623869,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/ui/sidebuttons/sound.icon",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623869,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/ui/sidebuttons/sound-muted.icon",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623869,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/ui/sidebuttons/t-shirt.icon",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623869,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/ui/sidebuttons/poo.icon",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623869,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/fonts/planet.font",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623869,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/fonts/UglyDave-Alternates-optimized.font",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623869,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/fonts/heading.font",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623869,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/ui/arrow.icon",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623869,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/ui/cross.icon",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623869,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/ui/emojis/0.icon",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623869,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/ui/emojis/1.icon",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623869,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/ui/emojis/2.icon",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623869,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/ui/emojis/3.icon",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623869,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/ui/emojis/4.icon",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623869,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/ui/emojis/5.icon",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623869,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/ui/emojis/6.icon",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623869,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/ui/emojis/7.icon",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623869,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/ui/emojis/8.icon",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623869,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/ui/emojis/9.icon",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623902,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/geometries/planets/present/intro/planet.drc",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623902,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/geometries/planets/present/intro/water.drc",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623902,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/geometries/planets/present/intro/trees.drc",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623902,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/geometries/planets/present/intro/clouds.drc",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623902,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/geometries/birds/1.drc",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623902,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/geometries/planets/present/cables-1.drc",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623902,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/geometries/planets/present/cables-2.drc",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623902,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/geometries/planets/present/waterfall_vfx.drc",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623902,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/geometries/planets/present/waterfallsplash_vfx.drc",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623902,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/geometries/planets/present/waterfall_inlet_vfx.drc",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623902,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/geometries/planets/present/intro/title_vertical.drc",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623902,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/geometries//planets/intro/points.drc",
+    "resourceType": "fetch",
+    "status": 307,
+    "size": 0
+  },
+  {
+    "t": 1781631623902,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/geometries/planets/present/intro/galaxies.drc",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623902,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/geometries/planets/present/intro/button.drc",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631623903,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/lut.ktx2",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 96627
+  },
+  {
+    "t": 1781631623903,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/geometries/birds/curve-1.drc",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 1736
+  },
+  {
+    "t": 1781631623903,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/clouds_noise_64.ktx2",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 1977
+  },
+  {
+    "t": 1781631624486,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/geometries/planets/intro/points.drc",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 0
+  },
+  {
+    "t": 1781631624831,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/glyphworker-DoaYwstb.js",
+    "resourceType": "script",
+    "status": 200,
+    "size": 22475
+  },
+  {
+    "t": 1781631624976,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/dracoworker-9mmlh0V-.js",
+    "resourceType": "script",
+    "status": 200,
+    "size": 1299
+  },
+  {
+    "t": 1781631625028,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/libs/basis/basis_transcoder.js",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 14981
+  },
+  {
+    "t": 1781631625028,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/libs/basis/basis_transcoder.wasm",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 186461
+  },
+  {
+    "t": 1781631625114,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/libs/glyph/glyph.js",
+    "resourceType": "script",
+    "status": 200,
+    "size": 4239
+  },
+  {
+    "t": 1781631622758,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/libs/draco/draco_wasm_wrapper.js",
+    "resourceType": "script",
+    "status": 200,
+    "size": 10095
+  },
+  {
+    "t": 1781631622841,
+    "method": "GET",
+    "url": "blob:https://messenger.abeto.co/2162a85e-5d8d-49cb-b93d-54ed65580ef2",
+    "resourceType": "script",
+    "status": 200,
+    "size": 73100
+  },
+  {
+    "t": 1781631622889,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/libs/glyph/glyph.wasm",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 30487
+  },
+  {
+    "t": 1781631623033,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/libs/draco/draco_decoder.wasm",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 66138
+  },
+  {
+    "t": 1781631623204,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/noise-simplex-layered-pixellated-highq.ktx2",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 83624
+  },
+  {
+    "t": 1781631623207,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/noise-simplex-layered-blur-highq.ktx2",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 80762
+  },
+  {
+    "t": 1781631623368,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/bitmapworker-DtCLhbWB.js",
+    "resourceType": "script"
+  },
+  {
+    "t": 1781631623368,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/clouds_noise_512.ktx2",
+    "resourceType": "fetch"
+  },
+  {
+    "t": 1781631623426,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/noises-terrain.ktx2",
+    "resourceType": "fetch"
+  },
+  {
+    "t": 1781631623433,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/water-noises-highq.ktx2",
+    "resourceType": "fetch"
+  },
+  {
+    "t": 1781631623433,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/clouds_noise_64.ktx2",
+    "resourceType": "fetch",
+    "status": 200,
+    "size": 1977
+  },
+  {
+    "t": 1781631623434,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/geometryworker-WyEueJn9.js",
+    "resourceType": "script"
+  },
+  {
+    "t": 1781631623446,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/galaxy.ktx2",
+    "resourceType": "fetch"
+  },
+  {
+    "t": 1781631623447,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/particle_sprites.ktx2",
+    "resourceType": "fetch"
+  },
+  {
+    "t": 1781631623631,
+    "method": "GET",
+    "url": "https://messenger.abeto.co/assets/images/uv/uvchecker-srgb.ktx2",
+    "resourceType": "fetch"
+  }
+]

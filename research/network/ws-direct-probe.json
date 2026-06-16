@@ -1,0 +1,70 @@
+[
+  {
+    "t": 1781631789613,
+    "dir": "meta",
+    "event": "open"
+  },
+  {
+    "t": 1781631789613,
+    "dir": "send",
+    "label": "empty",
+    "bytes": 0,
+    "hex": ""
+  },
+  {
+    "t": 1781631789614,
+    "dir": "recv",
+    "bytes": 13,
+    "binary": false,
+    "text": "{\"id\":\"frRS\"}"
+  },
+  {
+    "t": 1781631789814,
+    "dir": "send",
+    "label": "byte:00",
+    "bytes": 1,
+    "hex": "00"
+  },
+  {
+    "t": 1781631790016,
+    "dir": "send",
+    "label": "byte:01",
+    "bytes": 1,
+    "hex": "01"
+  },
+  {
+    "t": 1781631790216,
+    "dir": "send",
+    "label": "byte:02",
+    "bytes": 1,
+    "hex": "02"
+  },
+  {
+    "t": 1781631790416,
+    "dir": "send",
+    "label": "byte:ff",
+    "bytes": 1,
+    "hex": "ff"
+  },
+  {
+    "t": 1781631790615,
+    "dir": "send",
+    "label": "text:HELLO",
+    "bytes": 5,
+    "hex": "48454c4c4f"
+  },
+  {
+    "t": 1781631790815,
+    "dir": "send",
+    "label": "json:join",
+    "bytes": 29,
+    "hex": "{\"type\":\"join\",\"room\":\"test\"}"
+  },
+  {
+    "t": 1781631794970,
+    "dir": "meta",
+    "event": "close",
+    "code": 1006,
+    "reason": ""
+  }
+]
