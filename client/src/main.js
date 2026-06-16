@@ -13,7 +13,7 @@ import { buildAvatar, alignToPlanet } from './scenes/avatar.js';
 import { PlanetCameraRig } from './scenes/camera-rig.js';
 import { MatrixNet } from './systems/net.js';
 import { QuestEngine } from './systems/quests.js';
-import { PHYSICS, DISTRICTS } from './ontology/world.js';
+import { PHYSICS, DISTRICTS, PLANETS, G } from './ontology/world.js';
 
 const PLANET_RADIUS = PHYSICS.planet_radius;
 const state = { peers: new Map(), tag: prompt_tag() };
@@ -75,15 +75,15 @@ async function main() {
   scene.add(peerGroup);
   const peerMeshes = new Map();
 
-  // input + physics
+  // input + physics — now multi-body. Walker reads PLANETS/G directly from world.js.
   const input = new InputState();
   const walker = new SphereWalker({
-    radius: PLANET_RADIUS,
-    gravity: PHYSICS.gravity,
+    planets:   PLANETS,
+    gConst:    G,
     jumpForce: PHYSICS.jump_force,
-    speed: PHYSICS.walk_speed,
+    speed:     PHYSICS.walk_speed,
+    startPlanetId: 'zion',
   });
-  walker.position.set(0, PLANET_RADIUS + 0.5, 0);
 
   const rig = new PlanetCameraRig(camera, { distance: 9, height: 4 });
 
