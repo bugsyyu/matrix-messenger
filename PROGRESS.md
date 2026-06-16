@@ -33,8 +33,46 @@
 
 abeto Messenger 真正是: **Svelte 5 + Three.js WebGL** 客户端 + **uWebSockets.js generic-relay 服务端**(动态 protobuf RealmData);**单一小行星(planet `present`)** 上 6 个区域(intro/beach/city/factory/forest/temple/waterfalls);**19 NPC + 6 类快递包裹 + quest engine**(`quest_enable/disable/give/receive_model + step_check`);角色绕球面行走,多人同步只传 pos/rot/anim/tag/networkEvent。
 
-## 下一步 (阶段 2: 架构设计)
+## 阶段 2 实际决策 (2026-06-16 17:50 — 与阶段1 计划有 2 处偏离, 已记录)
 
-- [ ] 锁定 Matrix 视觉:CRT 绿 (#00ff41) + 字符雨 shader + ASCII 替代纹理 + monospace 终端 HUD。
-- [ ] 选型:SvelteKit + Three.js + Vite(同款客户端);uWebSockets.js + 同 microrealm 协议(可直接借用)。
-- [ ] 物理本体:JSON-LD/Turtle schema 描述 planet/NPC/quest/delivery/action,挂在 `/ontology` 端点。
+- 视觉 ✅:CRT 绿 `#00ff41` + 字符雨 canvas2D + scanline + 终端 monospace HUD + boot 序列。
+- 客户端框架 **改 SvelteKit → Vanilla JS + Vite**:游戏没有路由/SSR/数据层,Svelte 组件化收益低,DOM 改动只有 HUD/终端两块,直接操作更轻;Three.js 主导。
+- 服务端 **改 uWebSockets.js → `ws` (纯 Node)**:本地开发优先,`ws` API 与 uWS 接近,后续 Cloud Run 部署可一行换包;线协议层完全照搬 microrealm(`{id}/{r}/{data}/{leave}/{ping}/{pong}`),零差异。
+- 物理本体 (阶段4):JSON-LD + Turtle + `/agent-sdk.js`。
+
+## Watson critic 反馈 (2026-06-16 19:12, agent_solve probe)
+
+调 `bash .monitor/agent_solve.sh "<q>" probe` 真测改革 B — Watson 给出实质裁决,不是 ceremony:
+
+- **Cynefin 域** = complex (confidence 0.82),不是 simple/complicated/chaotic。
+- **method_family 主轴** = `hybrid`(c 选项),次轴 `cynefin + dsm_interface`。
+- **route**:不要先拍板三选一,要做 **seam 测试** — abeto 6 districts → Matrix 语义 → 导航命名映射稳定性。基底落在内容 taxonomy / 命名 / 迁移约束。
+- **disconfirming**:若 districts 已硬编码 → 降级到 dsm_interface(纯接口映射工作);若评分准则就绪 → 降级 complicated。
+
+**真效果**:Watson 这次反馈让我 (1) 明确选 hybrid (匹配现有方向, +信号), (2) 加 seam 验证 — 把 `abeto_alias` + `abeto_ambiance` 字段塞进 districts schema,让跨域 agent (读 abeto 文档的 + 读我们 ontology 的) 可以对账,**这是我自己没想到的层**。
+- **改革 B 评价**:真有用(非装饰),关键在 probe 模式给出"why-not 4 条"而非"yes/no",省了我自己穷举的麻烦。
+
+## 阶段 3 代码骨架 (2026-06-16 17:55)
+
+- `client/`:`index.html` + `vite.config.mjs` + `src/{main.js, ui/{rain,boot,terminal,styles}, scenes/{planet,avatar,camera-rig}, systems/{input,sphere-physics,net,quests}, ontology/world.js}` — 共 12 文件 ~900 行。
+- `server/`:`src/index.mjs` 微 realm 中继 + ontology 端点 + 静态文件。
+
+## 阶段 3 + 4 跑通 (2026-06-16 19:25)
+
+- `server/src/index.mjs` 启动监听 :3006,4 端点 `/healthz /ontology /ontology.ttl /agent-sdk.js` 全 200。
+- `server/src/e2e.test.mjs` 8/8 断言全过(id/room/relay/from/pong/leave)。
+- `server/src/agent.test.mjs` 6/6 断言全过(ontology ingest / peer visibility / chat / event / 球面行走 18.3m)。
+- 客户端 `vite build` 生成 dist/ 507KB(gzip 130KB),server 自动从 dist 服务。
+- Playwright headless 跑 4 截图(`research/visual/`):
+  - **01-boot.png**:黑底 + 绿 typewriter log + 隐约字符雨。
+  - **02-planet.png**:绿色 wireframe 行星 + Zion 区域绿色信标柱 + HUD(NODE/ID/PEERS/LAT/QUEST)+ 终端。
+  - **04-after-goto.png**:`/goto oracle` 传送后,橙色 (#ff8a00) Oracle 信标在视野中,终端显示 /help 完整菜单 + teleport 成功。
+  - 0 错误,0 console error。
+- 球面行走 SDK 修了一个 antipodal slerp bug(原 cartesian + 投影在大圆切线 = 0 处不收敛,改 SLERP 真球面插值)。
+
+## 阶段 5 — 待办
+
+- [ ] README + 截图 + landing。
+- [ ] 部署脚本(Dockerfile / fly.toml / Cloud Run yaml)。
+- [ ] favicon SVG。
+- [ ] 性能压测:50 peers / room 看 latency。

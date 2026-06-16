@@ -1,17 +1,30 @@
 {
-  "name": "abeto",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "matrix-messenger",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Matrix-themed planetary courier MMO + machine-readable physics ontology",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently -k -n client,server -c green,cyan \"npm:dev:client\" \"npm:dev:server\"",
+    "dev:client": "vite --config client/vite.config.mjs",
+    "dev:server": "node --watch server/src/index.mjs",
+    "build": "vite --config client/vite.config.mjs build",
+    "preview": "vite --config client/vite.config.mjs preview --host 0.0.0.0",
+    "start": "node server/src/index.mjs",
+    "research:sniff": "node research/sniff2.mjs",
+    "research:wsprobe": "node research/ws_probe.mjs",
+    "test:ontology": "node server/src/ontology.test.mjs"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "playwright": "^1.61.0",
+    "three": "^0.180.0",
     "ws": "^8.21.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "playwright": "^1.61.0",
+    "vite": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }

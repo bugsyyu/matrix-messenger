@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>MESSENGER // SOURCE.NODE</title>
+    <meta name="description" content="A small Matrix. Someone has to route the packets." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/src/ui/styles.css" />
+  </head>
+  <body>
+    <canvas id="rain"></canvas>
+    <div id="boot">
+      <pre id="boot-log"></pre>
+    </div>
+    <div id="app"></div>
+    <div id="hud" class="hidden">
+      <div class="hud-row">
+        <span class="hud-label">NODE</span><span id="hud-node">~/source</span>
+        <span class="hud-sep">|</span>
+        <span class="hud-label">ID</span><span id="hud-id">----</span>
+        <span class="hud-sep">|</span>
+        <span class="hud-label">PEERS</span><span id="hud-peers">0</span>
+        <span class="hud-sep">|</span>
+        <span class="hud-label">LAT</span><span id="hud-lat">--</span>ms
+      </div>
+      <div class="hud-row hud-quest">
+        <span class="hud-label">QUEST</span><span id="hud-quest">awaiting handshake…</span>
+      </div>
+    </div>
+    <div id="terminal" class="hidden">
+      <div id="term-log"></div>
+      <form id="term-form">
+        <span class="prompt">root@source:~$</span>
+        <input id="term-input" type="text" autocomplete="off" spellcheck="false" />
+      </form>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
