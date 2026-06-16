@@ -1,0 +1,1834 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "seed_clock_start": 1000000,
+    "sender": "4680e9ba3aa2c800",
+    "receiver": "9564058601d11f27",
+    "attacker": "5dec8258e7574799",
+    "generated_at": "1970-01-01T00:00:00.000 (synthetic-clock)"
+  },
+  "channel": {
+    "id": "urn:iap:channel:4680e9ba3aa2c800/9564058601d11f27/0",
+    "deposits": {
+      "sender": 200000,
+      "receiver": 100000
+    },
+    "total_paid_sender_to_receiver": 300
+  },
+  "transfers": [
+    {
+      "seq": 1,
+      "amount": 2,
+      "purpose": "m_1",
+      "balances": {
+        "4680e9ba3aa2c800": 199998,
+        "9564058601d11f27": 100002
+      },
+      "ts": 1000000
+    },
+    {
+      "seq": 2,
+      "amount": 3,
+      "purpose": "m_2",
+      "balances": {
+        "4680e9ba3aa2c800": 199995,
+        "9564058601d11f27": 100005
+      },
+      "ts": 1000050
+    },
+    {
+      "seq": 3,
+      "amount": 4,
+      "purpose": "m_3",
+      "balances": {
+        "4680e9ba3aa2c800": 199991,
+        "9564058601d11f27": 100009
+      },
+      "ts": 1000100
+    },
+    {
+      "seq": 4,
+      "amount": 5,
+      "purpose": "m_4",
+      "balances": {
+        "4680e9ba3aa2c800": 199986,
+        "9564058601d11f27": 100014
+      },
+      "ts": 1000150
+    },
+    {
+      "seq": 5,
+      "amount": 1,
+      "purpose": "m_5",
+      "balances": {
+        "4680e9ba3aa2c800": 199985,
+        "9564058601d11f27": 100015
+      },
+      "ts": 1000200
+    },
+    {
+      "seq": 6,
+      "amount": 2,
+      "purpose": "m_6",
+      "balances": {
+        "4680e9ba3aa2c800": 199983,
+        "9564058601d11f27": 100017
+      },
+      "ts": 1000250
+    },
+    {
+      "seq": 7,
+      "amount": 3,
+      "purpose": "m_7",
+      "balances": {
+        "4680e9ba3aa2c800": 199980,
+        "9564058601d11f27": 100020
+      },
+      "ts": 1000300
+    },
+    {
+      "seq": 8,
+      "amount": 4,
+      "purpose": "m_8",
+      "balances": {
+        "4680e9ba3aa2c800": 199976,
+        "9564058601d11f27": 100024
+      },
+      "ts": 1000350
+    },
+    {
+      "seq": 9,
+      "amount": 5,
+      "purpose": "m_9",
+      "balances": {
+        "4680e9ba3aa2c800": 199971,
+        "9564058601d11f27": 100029
+      },
+      "ts": 1000400
+    },
+    {
+      "seq": 10,
+      "amount": 1,
+      "purpose": "m_10",
+      "balances": {
+        "4680e9ba3aa2c800": 199970,
+        "9564058601d11f27": 100030
+      },
+      "ts": 1000450
+    },
+    {
+      "seq": 11,
+      "amount": 2,
+      "purpose": "m_11",
+      "balances": {
+        "4680e9ba3aa2c800": 199968,
+        "9564058601d11f27": 100032
+      },
+      "ts": 1000500
+    },
+    {
+      "seq": 12,
+      "amount": 3,
+      "purpose": "m_12",
+      "balances": {
+        "4680e9ba3aa2c800": 199965,
+        "9564058601d11f27": 100035
+      },
+      "ts": 1000550
+    },
+    {
+      "seq": 13,
+      "amount": 4,
+      "purpose": "m_13",
+      "balances": {
+        "4680e9ba3aa2c800": 199961,
+        "9564058601d11f27": 100039
+      },
+      "ts": 1000600
+    },
+    {
+      "seq": 14,
+      "amount": 5,
+      "purpose": "m_14",
+      "balances": {
+        "4680e9ba3aa2c800": 199956,
+        "9564058601d11f27": 100044
+      },
+      "ts": 1000650
+    },
+    {
+      "seq": 15,
+      "amount": 1,
+      "purpose": "m_15",
+      "balances": {
+        "4680e9ba3aa2c800": 199955,
+        "9564058601d11f27": 100045
+      },
+      "ts": 1000700
+    },
+    {
+      "seq": 16,
+      "amount": 2,
+      "purpose": "m_16",
+      "balances": {
+        "4680e9ba3aa2c800": 199953,
+        "9564058601d11f27": 100047
+      },
+      "ts": 1000750
+    },
+    {
+      "seq": 17,
+      "amount": 3,
+      "purpose": "m_17",
+      "balances": {
+        "4680e9ba3aa2c800": 199950,
+        "9564058601d11f27": 100050
+      },
+      "ts": 1000800
+    },
+    {
+      "seq": 18,
+      "amount": 4,
+      "purpose": "m_18",
+      "balances": {
+        "4680e9ba3aa2c800": 199946,
+        "9564058601d11f27": 100054
+      },
+      "ts": 1000850
+    },
+    {
+      "seq": 19,
+      "amount": 5,
+      "purpose": "m_19",
+      "balances": {
+        "4680e9ba3aa2c800": 199941,
+        "9564058601d11f27": 100059
+      },
+      "ts": 1000900
+    },
+    {
+      "seq": 20,
+      "amount": 1,
+      "purpose": "m_20",
+      "balances": {
+        "4680e9ba3aa2c800": 199940,
+        "9564058601d11f27": 100060
+      },
+      "ts": 1000950
+    },
+    {
+      "seq": 21,
+      "amount": 2,
+      "purpose": "m_21",
+      "balances": {
+        "4680e9ba3aa2c800": 199938,
+        "9564058601d11f27": 100062
+      },
+      "ts": 1001000
+    },
+    {
+      "seq": 22,
+      "amount": 3,
+      "purpose": "m_22",
+      "balances": {
+        "4680e9ba3aa2c800": 199935,
+        "9564058601d11f27": 100065
+      },
+      "ts": 1001050
+    },
+    {
+      "seq": 23,
+      "amount": 4,
+      "purpose": "m_23",
+      "balances": {
+        "4680e9ba3aa2c800": 199931,
+        "9564058601d11f27": 100069
+      },
+      "ts": 1001100
+    },
+    {
+      "seq": 24,
+      "amount": 5,
+      "purpose": "m_24",
+      "balances": {
+        "4680e9ba3aa2c800": 199926,
+        "9564058601d11f27": 100074
+      },
+      "ts": 1001150
+    },
+    {
+      "seq": 25,
+      "amount": 1,
+      "purpose": "m_25",
+      "balances": {
+        "4680e9ba3aa2c800": 199925,
+        "9564058601d11f27": 100075
+      },
+      "ts": 1001200
+    },
+    {
+      "seq": 26,
+      "amount": 2,
+      "purpose": "m_26",
+      "balances": {
+        "4680e9ba3aa2c800": 199923,
+        "9564058601d11f27": 100077
+      },
+      "ts": 1001250
+    },
+    {
+      "seq": 27,
+      "amount": 3,
+      "purpose": "m_27",
+      "balances": {
+        "4680e9ba3aa2c800": 199920,
+        "9564058601d11f27": 100080
+      },
+      "ts": 1001300
+    },
+    {
+      "seq": 28,
+      "amount": 4,
+      "purpose": "m_28",
+      "balances": {
+        "4680e9ba3aa2c800": 199916,
+        "9564058601d11f27": 100084
+      },
+      "ts": 1001350
+    },
+    {
+      "seq": 29,
+      "amount": 5,
+      "purpose": "m_29",
+      "balances": {
+        "4680e9ba3aa2c800": 199911,
+        "9564058601d11f27": 100089
+      },
+      "ts": 1001400
+    },
+    {
+      "seq": 30,
+      "amount": 1,
+      "purpose": "m_30",
+      "balances": {
+        "4680e9ba3aa2c800": 199910,
+        "9564058601d11f27": 100090
+      },
+      "ts": 1001450
+    },
+    {
+      "seq": 31,
+      "amount": 2,
+      "purpose": "m_31",
+      "balances": {
+        "4680e9ba3aa2c800": 199908,
+        "9564058601d11f27": 100092
+      },
+      "ts": 1001500
+    },
+    {
+      "seq": 32,
+      "amount": 3,
+      "purpose": "m_32",
+      "balances": {
+        "4680e9ba3aa2c800": 199905,
+        "9564058601d11f27": 100095
+      },
+      "ts": 1001550
+    },
+    {
+      "seq": 33,
+      "amount": 4,
+      "purpose": "m_33",
+      "balances": {
+        "4680e9ba3aa2c800": 199901,
+        "9564058601d11f27": 100099
+      },
+      "ts": 1001600
+    },
+    {
+      "seq": 34,
+      "amount": 5,
+      "purpose": "m_34",
+      "balances": {
+        "4680e9ba3aa2c800": 199896,
+        "9564058601d11f27": 100104
+      },
+      "ts": 1001650
+    },
+    {
+      "seq": 35,
+      "amount": 1,
+      "purpose": "m_35",
+      "balances": {
+        "4680e9ba3aa2c800": 199895,
+        "9564058601d11f27": 100105
+      },
+      "ts": 1001700
+    },
+    {
+      "seq": 36,
+      "amount": 2,
+      "purpose": "m_36",
+      "balances": {
+        "4680e9ba3aa2c800": 199893,
+        "9564058601d11f27": 100107
+      },
+      "ts": 1001750
+    },
+    {
+      "seq": 37,
+      "amount": 3,
+      "purpose": "m_37",
+      "balances": {
+        "4680e9ba3aa2c800": 199890,
+        "9564058601d11f27": 100110
+      },
+      "ts": 1001800
+    },
+    {
+      "seq": 38,
+      "amount": 4,
+      "purpose": "m_38",
+      "balances": {
+        "4680e9ba3aa2c800": 199886,
+        "9564058601d11f27": 100114
+      },
+      "ts": 1001850
+    },
+    {
+      "seq": 39,
+      "amount": 5,
+      "purpose": "m_39",
+      "balances": {
+        "4680e9ba3aa2c800": 199881,
+        "9564058601d11f27": 100119
+      },
+      "ts": 1001900
+    },
+    {
+      "seq": 40,
+      "amount": 1,
+      "purpose": "m_40",
+      "balances": {
+        "4680e9ba3aa2c800": 199880,
+        "9564058601d11f27": 100120
+      },
+      "ts": 1001950
+    },
+    {
+      "seq": 41,
+      "amount": 2,
+      "purpose": "m_41",
+      "balances": {
+        "4680e9ba3aa2c800": 199878,
+        "9564058601d11f27": 100122
+      },
+      "ts": 1002000
+    },
+    {
+      "seq": 42,
+      "amount": 3,
+      "purpose": "m_42",
+      "balances": {
+        "4680e9ba3aa2c800": 199875,
+        "9564058601d11f27": 100125
+      },
+      "ts": 1002050
+    },
+    {
+      "seq": 43,
+      "amount": 4,
+      "purpose": "m_43",
+      "balances": {
+        "4680e9ba3aa2c800": 199871,
+        "9564058601d11f27": 100129
+      },
+      "ts": 1002100
+    },
+    {
+      "seq": 44,
+      "amount": 5,
+      "purpose": "m_44",
+      "balances": {
+        "4680e9ba3aa2c800": 199866,
+        "9564058601d11f27": 100134
+      },
+      "ts": 1002150
+    },
+    {
+      "seq": 45,
+      "amount": 1,
+      "purpose": "m_45",
+      "balances": {
+        "4680e9ba3aa2c800": 199865,
+        "9564058601d11f27": 100135
+      },
+      "ts": 1002200
+    },
+    {
+      "seq": 46,
+      "amount": 2,
+      "purpose": "m_46",
+      "balances": {
+        "4680e9ba3aa2c800": 199863,
+        "9564058601d11f27": 100137
+      },
+      "ts": 1002250
+    },
+    {
+      "seq": 47,
+      "amount": 3,
+      "purpose": "m_47",
+      "balances": {
+        "4680e9ba3aa2c800": 199860,
+        "9564058601d11f27": 100140
+      },
+      "ts": 1002300
+    },
+    {
+      "seq": 48,
+      "amount": 4,
+      "purpose": "m_48",
+      "balances": {
+        "4680e9ba3aa2c800": 199856,
+        "9564058601d11f27": 100144
+      },
+      "ts": 1002350
+    },
+    {
+      "seq": 49,
+      "amount": 5,
+      "purpose": "m_49",
+      "balances": {
+        "4680e9ba3aa2c800": 199851,
+        "9564058601d11f27": 100149
+      },
+      "ts": 1002400
+    },
+    {
+      "seq": 50,
+      "amount": 1,
+      "purpose": "m_50",
+      "balances": {
+        "4680e9ba3aa2c800": 199850,
+        "9564058601d11f27": 100150
+      },
+      "ts": 1002450
+    },
+    {
+      "seq": 51,
+      "amount": 2,
+      "purpose": "m_51",
+      "balances": {
+        "4680e9ba3aa2c800": 199848,
+        "9564058601d11f27": 100152
+      },
+      "ts": 1002500
+    },
+    {
+      "seq": 52,
+      "amount": 3,
+      "purpose": "m_52",
+      "balances": {
+        "4680e9ba3aa2c800": 199845,
+        "9564058601d11f27": 100155
+      },
+      "ts": 1002550
+    },
+    {
+      "seq": 53,
+      "amount": 4,
+      "purpose": "m_53",
+      "balances": {
+        "4680e9ba3aa2c800": 199841,
+        "9564058601d11f27": 100159
+      },
+      "ts": 1002600
+    },
+    {
+      "seq": 54,
+      "amount": 5,
+      "purpose": "m_54",
+      "balances": {
+        "4680e9ba3aa2c800": 199836,
+        "9564058601d11f27": 100164
+      },
+      "ts": 1002650
+    },
+    {
+      "seq": 55,
+      "amount": 1,
+      "purpose": "m_55",
+      "balances": {
+        "4680e9ba3aa2c800": 199835,
+        "9564058601d11f27": 100165
+      },
+      "ts": 1002700
+    },
+    {
+      "seq": 56,
+      "amount": 2,
+      "purpose": "m_56",
+      "balances": {
+        "4680e9ba3aa2c800": 199833,
+        "9564058601d11f27": 100167
+      },
+      "ts": 1002750
+    },
+    {
+      "seq": 57,
+      "amount": 3,
+      "purpose": "m_57",
+      "balances": {
+        "4680e9ba3aa2c800": 199830,
+        "9564058601d11f27": 100170
+      },
+      "ts": 1002800
+    },
+    {
+      "seq": 58,
+      "amount": 4,
+      "purpose": "m_58",
+      "balances": {
+        "4680e9ba3aa2c800": 199826,
+        "9564058601d11f27": 100174
+      },
+      "ts": 1002850
+    },
+    {
+      "seq": 59,
+      "amount": 5,
+      "purpose": "m_59",
+      "balances": {
+        "4680e9ba3aa2c800": 199821,
+        "9564058601d11f27": 100179
+      },
+      "ts": 1002900
+    },
+    {
+      "seq": 60,
+      "amount": 1,
+      "purpose": "m_60",
+      "balances": {
+        "4680e9ba3aa2c800": 199820,
+        "9564058601d11f27": 100180
+      },
+      "ts": 1002950
+    },
+    {
+      "seq": 61,
+      "amount": 2,
+      "purpose": "m_61",
+      "balances": {
+        "4680e9ba3aa2c800": 199818,
+        "9564058601d11f27": 100182
+      },
+      "ts": 1003000
+    },
+    {
+      "seq": 62,
+      "amount": 3,
+      "purpose": "m_62",
+      "balances": {
+        "4680e9ba3aa2c800": 199815,
+        "9564058601d11f27": 100185
+      },
+      "ts": 1003050
+    },
+    {
+      "seq": 63,
+      "amount": 4,
+      "purpose": "m_63",
+      "balances": {
+        "4680e9ba3aa2c800": 199811,
+        "9564058601d11f27": 100189
+      },
+      "ts": 1003100
+    },
+    {
+      "seq": 64,
+      "amount": 5,
+      "purpose": "m_64",
+      "balances": {
+        "4680e9ba3aa2c800": 199806,
+        "9564058601d11f27": 100194
+      },
+      "ts": 1003150
+    },
+    {
+      "seq": 65,
+      "amount": 1,
+      "purpose": "m_65",
+      "balances": {
+        "4680e9ba3aa2c800": 199805,
+        "9564058601d11f27": 100195
+      },
+      "ts": 1003200
+    },
+    {
+      "seq": 66,
+      "amount": 2,
+      "purpose": "m_66",
+      "balances": {
+        "4680e9ba3aa2c800": 199803,
+        "9564058601d11f27": 100197
+      },
+      "ts": 1003250
+    },
+    {
+      "seq": 67,
+      "amount": 3,
+      "purpose": "m_67",
+      "balances": {
+        "4680e9ba3aa2c800": 199800,
+        "9564058601d11f27": 100200
+      },
+      "ts": 1003300
+    },
+    {
+      "seq": 68,
+      "amount": 4,
+      "purpose": "m_68",
+      "balances": {
+        "4680e9ba3aa2c800": 199796,
+        "9564058601d11f27": 100204
+      },
+      "ts": 1003350
+    },
+    {
+      "seq": 69,
+      "amount": 5,
+      "purpose": "m_69",
+      "balances": {
+        "4680e9ba3aa2c800": 199791,
+        "9564058601d11f27": 100209
+      },
+      "ts": 1003400
+    },
+    {
+      "seq": 70,
+      "amount": 1,
+      "purpose": "m_70",
+      "balances": {
+        "4680e9ba3aa2c800": 199790,
+        "9564058601d11f27": 100210
+      },
+      "ts": 1003450
+    },
+    {
+      "seq": 71,
+      "amount": 2,
+      "purpose": "m_71",
+      "balances": {
+        "4680e9ba3aa2c800": 199788,
+        "9564058601d11f27": 100212
+      },
+      "ts": 1003500
+    },
+    {
+      "seq": 72,
+      "amount": 3,
+      "purpose": "m_72",
+      "balances": {
+        "4680e9ba3aa2c800": 199785,
+        "9564058601d11f27": 100215
+      },
+      "ts": 1003550
+    },
+    {
+      "seq": 73,
+      "amount": 4,
+      "purpose": "m_73",
+      "balances": {
+        "4680e9ba3aa2c800": 199781,
+        "9564058601d11f27": 100219
+      },
+      "ts": 1003600
+    },
+    {
+      "seq": 74,
+      "amount": 5,
+      "purpose": "m_74",
+      "balances": {
+        "4680e9ba3aa2c800": 199776,
+        "9564058601d11f27": 100224
+      },
+      "ts": 1003650
+    },
+    {
+      "seq": 75,
+      "amount": 1,
+      "purpose": "m_75",
+      "balances": {
+        "4680e9ba3aa2c800": 199775,
+        "9564058601d11f27": 100225
+      },
+      "ts": 1003700
+    },
+    {
+      "seq": 76,
+      "amount": 2,
+      "purpose": "m_76",
+      "balances": {
+        "4680e9ba3aa2c800": 199773,
+        "9564058601d11f27": 100227
+      },
+      "ts": 1003750
+    },
+    {
+      "seq": 77,
+      "amount": 3,
+      "purpose": "m_77",
+      "balances": {
+        "4680e9ba3aa2c800": 199770,
+        "9564058601d11f27": 100230
+      },
+      "ts": 1003800
+    },
+    {
+      "seq": 78,
+      "amount": 4,
+      "purpose": "m_78",
+      "balances": {
+        "4680e9ba3aa2c800": 199766,
+        "9564058601d11f27": 100234
+      },
+      "ts": 1003850
+    },
+    {
+      "seq": 79,
+      "amount": 5,
+      "purpose": "m_79",
+      "balances": {
+        "4680e9ba3aa2c800": 199761,
+        "9564058601d11f27": 100239
+      },
+      "ts": 1003900
+    },
+    {
+      "seq": 80,
+      "amount": 1,
+      "purpose": "m_80",
+      "balances": {
+        "4680e9ba3aa2c800": 199760,
+        "9564058601d11f27": 100240
+      },
+      "ts": 1003950
+    },
+    {
+      "seq": 81,
+      "amount": 2,
+      "purpose": "m_81",
+      "balances": {
+        "4680e9ba3aa2c800": 199758,
+        "9564058601d11f27": 100242
+      },
+      "ts": 1004000
+    },
+    {
+      "seq": 82,
+      "amount": 3,
+      "purpose": "m_82",
+      "balances": {
+        "4680e9ba3aa2c800": 199755,
+        "9564058601d11f27": 100245
+      },
+      "ts": 1004050
+    },
+    {
+      "seq": 83,
+      "amount": 4,
+      "purpose": "m_83",
+      "balances": {
+        "4680e9ba3aa2c800": 199751,
+        "9564058601d11f27": 100249
+      },
+      "ts": 1004100
+    },
+    {
+      "seq": 84,
+      "amount": 5,
+      "purpose": "m_84",
+      "balances": {
+        "4680e9ba3aa2c800": 199746,
+        "9564058601d11f27": 100254
+      },
+      "ts": 1004150
+    },
+    {
+      "seq": 85,
+      "amount": 1,
+      "purpose": "m_85",
+      "balances": {
+        "4680e9ba3aa2c800": 199745,
+        "9564058601d11f27": 100255
+      },
+      "ts": 1004200
+    },
+    {
+      "seq": 86,
+      "amount": 2,
+      "purpose": "m_86",
+      "balances": {
+        "4680e9ba3aa2c800": 199743,
+        "9564058601d11f27": 100257
+      },
+      "ts": 1004250
+    },
+    {
+      "seq": 87,
+      "amount": 3,
+      "purpose": "m_87",
+      "balances": {
+        "4680e9ba3aa2c800": 199740,
+        "9564058601d11f27": 100260
+      },
+      "ts": 1004300
+    },
+    {
+      "seq": 88,
+      "amount": 4,
+      "purpose": "m_88",
+      "balances": {
+        "4680e9ba3aa2c800": 199736,
+        "9564058601d11f27": 100264
+      },
+      "ts": 1004350
+    },
+    {
+      "seq": 89,
+      "amount": 5,
+      "purpose": "m_89",
+      "balances": {
+        "4680e9ba3aa2c800": 199731,
+        "9564058601d11f27": 100269
+      },
+      "ts": 1004400
+    },
+    {
+      "seq": 90,
+      "amount": 1,
+      "purpose": "m_90",
+      "balances": {
+        "4680e9ba3aa2c800": 199730,
+        "9564058601d11f27": 100270
+      },
+      "ts": 1004450
+    },
+    {
+      "seq": 91,
+      "amount": 2,
+      "purpose": "m_91",
+      "balances": {
+        "4680e9ba3aa2c800": 199728,
+        "9564058601d11f27": 100272
+      },
+      "ts": 1004500
+    },
+    {
+      "seq": 92,
+      "amount": 3,
+      "purpose": "m_92",
+      "balances": {
+        "4680e9ba3aa2c800": 199725,
+        "9564058601d11f27": 100275
+      },
+      "ts": 1004550
+    },
+    {
+      "seq": 93,
+      "amount": 4,
+      "purpose": "m_93",
+      "balances": {
+        "4680e9ba3aa2c800": 199721,
+        "9564058601d11f27": 100279
+      },
+      "ts": 1004600
+    },
+    {
+      "seq": 94,
+      "amount": 5,
+      "purpose": "m_94",
+      "balances": {
+        "4680e9ba3aa2c800": 199716,
+        "9564058601d11f27": 100284
+      },
+      "ts": 1004650
+    },
+    {
+      "seq": 95,
+      "amount": 1,
+      "purpose": "m_95",
+      "balances": {
+        "4680e9ba3aa2c800": 199715,
+        "9564058601d11f27": 100285
+      },
+      "ts": 1004700
+    },
+    {
+      "seq": 96,
+      "amount": 2,
+      "purpose": "m_96",
+      "balances": {
+        "4680e9ba3aa2c800": 199713,
+        "9564058601d11f27": 100287
+      },
+      "ts": 1004750
+    },
+    {
+      "seq": 97,
+      "amount": 3,
+      "purpose": "m_97",
+      "balances": {
+        "4680e9ba3aa2c800": 199710,
+        "9564058601d11f27": 100290
+      },
+      "ts": 1004800
+    },
+    {
+      "seq": 98,
+      "amount": 4,
+      "purpose": "m_98",
+      "balances": {
+        "4680e9ba3aa2c800": 199706,
+        "9564058601d11f27": 100294
+      },
+      "ts": 1004850
+    },
+    {
+      "seq": 99,
+      "amount": 5,
+      "purpose": "m_99",
+      "balances": {
+        "4680e9ba3aa2c800": 199701,
+        "9564058601d11f27": 100299
+      },
+      "ts": 1004900
+    },
+    {
+      "seq": 100,
+      "amount": 1,
+      "purpose": "m_100",
+      "balances": {
+        "4680e9ba3aa2c800": 199700,
+        "9564058601d11f27": 100300
+      },
+      "ts": 1004950
+    }
+  ],
+  "settlements": [
+    {
+      "channel": "urn:iap:channel:4680e9ba3aa2c800/9564058601d11f27/0",
+      "finalSeq": 100,
+      "balances": {
+        "4680e9ba3aa2c800": 199700,
+        "9564058601d11f27": 100300
+      },
+      "expected": {
+        "4680e9ba3aa2c800": 199700,
+        "9564058601d11f27": 100300
+      },
+      "reconciled": true
+    },
+    {
+      "channel": "urn:iap:channel:5dec8258e7574799/9564058601d11f27/1",
+      "finalSeq": 5,
+      "balances": {
+        "5dec8258e7574799": 49995,
+        "9564058601d11f27": 50005
+      },
+      "attacker_net": -5,
+      "honest_net": 5
+    }
+  ],
+  "trust_curve": {
+    "normal_sender_seen_by_receiver": [
+      {
+        "seq": 1,
+        "score": 0.4164,
+        "ts": 1000000
+      },
+      {
+        "seq": 2,
+        "score": 0.5137,
+        "ts": 1000050
+      },
+      {
+        "seq": 3,
+        "score": 0.5945,
+        "ts": 1000100
+      },
+      {
+        "seq": 4,
+        "score": 0.6615,
+        "ts": 1000150
+      },
+      {
+        "seq": 5,
+        "score": 0.7088,
+        "ts": 1000200
+      },
+      {
+        "seq": 6,
+        "score": 0.7516,
+        "ts": 1000250
+      },
+      {
+        "seq": 7,
+        "score": 0.7885,
+        "ts": 1000300
+      },
+      {
+        "seq": 8,
+        "score": 0.8199,
+        "ts": 1000350
+      },
+      {
+        "seq": 9,
+        "score": 0.8464,
+        "ts": 1000400
+      },
+      {
+        "seq": 10,
+        "score": 0.8604,
+        "ts": 1000450
+      },
+      {
+        "seq": 11,
+        "score": 0.8759,
+        "ts": 1000500
+      },
+      {
+        "seq": 12,
+        "score": 0.8904,
+        "ts": 1000550
+      },
+      {
+        "seq": 13,
+        "score": 0.9035,
+        "ts": 1000600
+      },
+      {
+        "seq": 14,
+        "score": 0.9149,
+        "ts": 1000650
+      },
+      {
+        "seq": 15,
+        "score": 0.9165,
+        "ts": 1000700
+      },
+      {
+        "seq": 16,
+        "score": 0.922,
+        "ts": 1000750
+      },
+      {
+        "seq": 17,
+        "score": 0.9282,
+        "ts": 1000800
+      },
+      {
+        "seq": 18,
+        "score": 0.9344,
+        "ts": 1000850
+      },
+      {
+        "seq": 19,
+        "score": 0.9403,
+        "ts": 1000900
+      },
+      {
+        "seq": 20,
+        "score": 0.9374,
+        "ts": 1000950
+      },
+      {
+        "seq": 21,
+        "score": 0.939,
+        "ts": 1001000
+      },
+      {
+        "seq": 22,
+        "score": 0.9422,
+        "ts": 1001050
+      },
+      {
+        "seq": 23,
+        "score": 0.9459,
+        "ts": 1001100
+      },
+      {
+        "seq": 24,
+        "score": 0.9497,
+        "ts": 1001150
+      },
+      {
+        "seq": 25,
+        "score": 0.9451,
+        "ts": 1001200
+      },
+      {
+        "seq": 26,
+        "score": 0.9454,
+        "ts": 1001250
+      },
+      {
+        "seq": 27,
+        "score": 0.9474,
+        "ts": 1001300
+      },
+      {
+        "seq": 28,
+        "score": 0.9502,
+        "ts": 1001350
+      },
+      {
+        "seq": 29,
+        "score": 0.9532,
+        "ts": 1001400
+      },
+      {
+        "seq": 30,
+        "score": 0.948,
+        "ts": 1001450
+      },
+      {
+        "seq": 31,
+        "score": 0.9477,
+        "ts": 1001500
+      },
+      {
+        "seq": 32,
+        "score": 0.9494,
+        "ts": 1001550
+      },
+      {
+        "seq": 33,
+        "score": 0.9518,
+        "ts": 1001600
+      },
+      {
+        "seq": 34,
+        "score": 0.9545,
+        "ts": 1001650
+      },
+      {
+        "seq": 35,
+        "score": 0.949,
+        "ts": 1001700
+      },
+      {
+        "seq": 36,
+        "score": 0.9486,
+        "ts": 1001750
+      },
+      {
+        "seq": 37,
+        "score": 0.9501,
+        "ts": 1001800
+      },
+      {
+        "seq": 38,
+        "score": 0.9524,
+        "ts": 1001850
+      },
+      {
+        "seq": 39,
+        "score": 0.955,
+        "ts": 1001900
+      },
+      {
+        "seq": 40,
+        "score": 0.9494,
+        "ts": 1001950
+      },
+      {
+        "seq": 41,
+        "score": 0.9489,
+        "ts": 1002000
+      },
+      {
+        "seq": 42,
+        "score": 0.9503,
+        "ts": 1002050
+      },
+      {
+        "seq": 43,
+        "score": 0.9526,
+        "ts": 1002100
+      },
+      {
+        "seq": 44,
+        "score": 0.9551,
+        "ts": 1002150
+      },
+      {
+        "seq": 45,
+        "score": 0.9496,
+        "ts": 1002200
+      },
+      {
+        "seq": 46,
+        "score": 0.949,
+        "ts": 1002250
+      },
+      {
+        "seq": 47,
+        "score": 0.9504,
+        "ts": 1002300
+      },
+      {
+        "seq": 48,
+        "score": 0.9526,
+        "ts": 1002350
+      },
+      {
+        "seq": 49,
+        "score": 0.9552,
+        "ts": 1002400
+      },
+      {
+        "seq": 50,
+        "score": 0.9496,
+        "ts": 1002450
+      },
+      {
+        "seq": 51,
+        "score": 0.9491,
+        "ts": 1002500
+      },
+      {
+        "seq": 52,
+        "score": 0.9505,
+        "ts": 1002550
+      },
+      {
+        "seq": 53,
+        "score": 0.9527,
+        "ts": 1002600
+      },
+      {
+        "seq": 54,
+        "score": 0.9552,
+        "ts": 1002650
+      },
+      {
+        "seq": 55,
+        "score": 0.9496,
+        "ts": 1002700
+      },
+      {
+        "seq": 56,
+        "score": 0.9491,
+        "ts": 1002750
+      },
+      {
+        "seq": 57,
+        "score": 0.9505,
+        "ts": 1002800
+      },
+      {
+        "seq": 58,
+        "score": 0.9527,
+        "ts": 1002850
+      },
+      {
+        "seq": 59,
+        "score": 0.9552,
+        "ts": 1002900
+      },
+      {
+        "seq": 60,
+        "score": 0.9496,
+        "ts": 1002950
+      },
+      {
+        "seq": 61,
+        "score": 0.9491,
+        "ts": 1003000
+      },
+      {
+        "seq": 62,
+        "score": 0.9505,
+        "ts": 1003050
+      },
+      {
+        "seq": 63,
+        "score": 0.9527,
+        "ts": 1003100
+      },
+      {
+        "seq": 64,
+        "score": 0.9552,
+        "ts": 1003150
+      },
+      {
+        "seq": 65,
+        "score": 0.9496,
+        "ts": 1003200
+      },
+      {
+        "seq": 66,
+        "score": 0.9491,
+        "ts": 1003250
+      },
+      {
+        "seq": 67,
+        "score": 0.9505,
+        "ts": 1003300
+      },
+      {
+        "seq": 68,
+        "score": 0.9527,
+        "ts": 1003350
+      },
+      {
+        "seq": 69,
+        "score": 0.9552,
+        "ts": 1003400
+      },
+      {
+        "seq": 70,
+        "score": 0.9496,
+        "ts": 1003450
+      },
+      {
+        "seq": 71,
+        "score": 0.9491,
+        "ts": 1003500
+      },
+      {
+        "seq": 72,
+        "score": 0.9505,
+        "ts": 1003550
+      },
+      {
+        "seq": 73,
+        "score": 0.9527,
+        "ts": 1003600
+      },
+      {
+        "seq": 74,
+        "score": 0.9552,
+        "ts": 1003650
+      },
+      {
+        "seq": 75,
+        "score": 0.9496,
+        "ts": 1003700
+      },
+      {
+        "seq": 76,
+        "score": 0.9491,
+        "ts": 1003750
+      },
+      {
+        "seq": 77,
+        "score": 0.9505,
+        "ts": 1003800
+      },
+      {
+        "seq": 78,
+        "score": 0.9527,
+        "ts": 1003850
+      },
+      {
+        "seq": 79,
+        "score": 0.9552,
+        "ts": 1003900
+      },
+      {
+        "seq": 80,
+        "score": 0.9496,
+        "ts": 1003950
+      },
+      {
+        "seq": 81,
+        "score": 0.9491,
+        "ts": 1004000
+      },
+      {
+        "seq": 82,
+        "score": 0.9505,
+        "ts": 1004050
+      },
+      {
+        "seq": 83,
+        "score": 0.9527,
+        "ts": 1004100
+      },
+      {
+        "seq": 84,
+        "score": 0.9552,
+        "ts": 1004150
+      },
+      {
+        "seq": 85,
+        "score": 0.9496,
+        "ts": 1004200
+      },
+      {
+        "seq": 86,
+        "score": 0.9491,
+        "ts": 1004250
+      },
+      {
+        "seq": 87,
+        "score": 0.9505,
+        "ts": 1004300
+      },
+      {
+        "seq": 88,
+        "score": 0.9527,
+        "ts": 1004350
+      },
+      {
+        "seq": 89,
+        "score": 0.9552,
+        "ts": 1004400
+      },
+      {
+        "seq": 90,
+        "score": 0.9496,
+        "ts": 1004450
+      },
+      {
+        "seq": 91,
+        "score": 0.9491,
+        "ts": 1004500
+      },
+      {
+        "seq": 92,
+        "score": 0.9505,
+        "ts": 1004550
+      },
+      {
+        "seq": 93,
+        "score": 0.9527,
+        "ts": 1004600
+      },
+      {
+        "seq": 94,
+        "score": 0.9552,
+        "ts": 1004650
+      },
+      {
+        "seq": 95,
+        "score": 0.9496,
+        "ts": 1004700
+      },
+      {
+        "seq": 96,
+        "score": 0.9491,
+        "ts": 1004750
+      },
+      {
+        "seq": 97,
+        "score": 0.9505,
+        "ts": 1004800
+      },
+      {
+        "seq": 98,
+        "score": 0.9527,
+        "ts": 1004850
+      },
+      {
+        "seq": 99,
+        "score": 0.9552,
+        "ts": 1004900
+      },
+      {
+        "seq": 100,
+        "score": 0.9496,
+        "ts": 1004950
+      }
+    ],
+    "attacker_sender_seen_by_receiver": [
+      {
+        "seq": 1,
+        "score": 0.2597,
+        "ts": 1005200,
+        "event": "forged_signature",
+        "error": "bad signature from 9564058601d11f27"
+      },
+      {
+        "seq": 2,
+        "score": 0.2266,
+        "ts": 1005280,
+        "event": "forged_signature",
+        "error": "bad signature from 9564058601d11f27"
+      },
+      {
+        "seq": 3,
+        "score": 0.1994,
+        "ts": 1005360,
+        "event": "forged_signature",
+        "error": "bad signature from 9564058601d11f27"
+      },
+      {
+        "seq": 4,
+        "score": 0.1772,
+        "ts": 1005440,
+        "event": "forged_signature",
+        "error": "bad signature from 9564058601d11f27"
+      },
+      {
+        "seq": 5,
+        "score": 0.159,
+        "ts": 1005520,
+        "event": "forged_signature",
+        "error": "bad signature from 9564058601d11f27"
+      },
+      {
+        "seq": 6,
+        "score": 0.144,
+        "ts": 1005850,
+        "event": "stale_close_defeated"
+      }
+    ]
+  },
+  "attacker_events": [
+    {
+      "kind": "forged",
+      "i": 1,
+      "error": "bad signature from 9564058601d11f27",
+      "score_after": 0.2597
+    },
+    {
+      "kind": "forged",
+      "i": 2,
+      "error": "bad signature from 9564058601d11f27",
+      "score_after": 0.2266
+    },
+    {
+      "kind": "forged",
+      "i": 3,
+      "error": "bad signature from 9564058601d11f27",
+      "score_after": 0.1994
+    },
+    {
+      "kind": "forged",
+      "i": 4,
+      "error": "bad signature from 9564058601d11f27",
+      "score_after": 0.1772
+    },
+    {
+      "kind": "forged",
+      "i": 5,
+      "error": "bad signature from 9564058601d11f27",
+      "score_after": 0.159
+    },
+    {
+      "kind": "stale_close_requested",
+      "seq": 2
+    },
+    {
+      "kind": "challenged_to",
+      "seq": 5,
+      "resets": 1
+    },
+    {
+      "kind": "settled",
+      "finalSeq": 5,
+      "attacker_net": -5,
+      "honest_net": 5
+    }
+  ],
+  "checks": {
+    "transfers_applied": 100,
+    "channel_settled": true,
+    "reconciled": true,
+    "attacker_extracted_value": false,
+    "normal_trust_rose_above_0_85": true,
+    "attacker_trust_fell_below_0_20": true
+  },
+  "log": [
+    {
+      "kind": "banner",
+      "text": "cast",
+      "t": 1000000
+    },
+    {
+      "kind": "note",
+      "text": "sender  4680e9ba3aa2c800",
+      "t": 1000000
+    },
+    {
+      "kind": "note",
+      "text": "receiver9564058601d11f27",
+      "t": 1000000
+    },
+    {
+      "kind": "note",
+      "text": "attacker5dec8258e7574799",
+      "t": 1000000
+    },
+    {
+      "kind": "banner",
+      "text": "open channels",
+      "t": 1000000
+    },
+    {
+      "kind": "note",
+      "text": "channel 058601d11f27/0  deposits=200000+100000=300000",
+      "t": 1000000
+    },
+    {
+      "kind": "note",
+      "text": "attacker-channel 058601d11f27/1",
+      "t": 1000000
+    },
+    {
+      "kind": "note",
+      "text": "trust cold-start: receiver→sender   = 0.300",
+      "t": 1000000
+    },
+    {
+      "kind": "note",
+      "text": "trust cold-start: receiver→attacker = 0.300",
+      "t": 1000000
+    },
+    {
+      "kind": "banner",
+      "text": "100 micropayments  sender → receiver",
+      "t": 1000000
+    },
+    {
+      "kind": "note",
+      "text": "tx#  1  amount=2  bal=[s:199998 r:100002]  trust=0.4164",
+      "t": 1000050
+    },
+    {
+      "kind": "note",
+      "text": "tx# 25  amount=1  bal=[s:199925 r:100075]  trust=0.9451",
+      "t": 1001250
+    },
+    {
+      "kind": "note",
+      "text": "tx# 50  amount=1  bal=[s:199850 r:100150]  trust=0.9496",
+      "t": 1002500
+    },
+    {
+      "kind": "note",
+      "text": "tx# 75  amount=1  bal=[s:199775 r:100225]  trust=0.9496",
+      "t": 1003750
+    },
+    {
+      "kind": "note",
+      "text": "tx#100  amount=1  bal=[s:199700 r:100300]  trust=0.9496",
+      "t": 1005000
+    },
+    {
+      "kind": "note",
+      "text": "total moved sender→receiver: 300 micro",
+      "t": 1005000
+    },
+    {
+      "kind": "note",
+      "text": "channel.latest.seq = 100",
+      "t": 1005000
+    },
+    {
+      "kind": "note",
+      "text": "receiver→sender trust (after 100 success) = 0.950",
+      "t": 1005000
+    },
+    {
+      "kind": "banner",
+      "text": "settle once",
+      "t": 1005000
+    },
+    {
+      "kind": "note",
+      "text": "request_close at t=1005000  deadline=1005100  claim_seq=100",
+      "t": 1005000
+    },
+    {
+      "kind": "note",
+      "text": "settled at t=1005200  finalSeq=100  balances={\"4680e9ba3aa2c800\":199700,\"9564058601d11f27\":100300}",
+      "t": 1005200
+    },
+    {
+      "kind": "note",
+      "text": "reconciled = ✅  expected(s=199700, r=100300)",
+      "t": 1005200
+    },
+    {
+      "kind": "banner",
+      "text": "attacker scenario: forged + stale signatures vs receiver",
+      "t": 1005200
+    },
+    {
+      "kind": "note",
+      "text": "attempt #1  forged-sig  rejected=\"bad signature from 9564058601d11f27\"  trust=0.2597",
+      "t": 1005200
+    },
+    {
+      "kind": "note",
+      "text": "attempt #2  forged-sig  rejected=\"bad signature from 9564058601d11f27\"  trust=0.2266",
+      "t": 1005280
+    },
+    {
+      "kind": "note",
+      "text": "attempt #3  forged-sig  rejected=\"bad signature from 9564058601d11f27\"  trust=0.1994",
+      "t": 1005360
+    },
+    {
+      "kind": "note",
+      "text": "attempt #4  forged-sig  rejected=\"bad signature from 9564058601d11f27\"  trust=0.1772",
+      "t": 1005440
+    },
+    {
+      "kind": "note",
+      "text": "attempt #5  forged-sig  rejected=\"bad signature from 9564058601d11f27\"  trust=0.159",
+      "t": 1005520
+    },
+    {
+      "kind": "banner",
+      "text": "attacker tries stale-state close",
+      "t": 1005600
+    },
+    {
+      "kind": "note",
+      "text": "stale state seq=2  r.bal=50002",
+      "t": 1005850
+    },
+    {
+      "kind": "note",
+      "text": "fresh state seq=5  r.bal=50005",
+      "t": 1005850
+    },
+    {
+      "kind": "note",
+      "text": "attacker stale seq=2 → receiver challenge seq=5 accepted (resets=1)",
+      "t": 1005850
+    },
+    {
+      "kind": "note",
+      "text": "trust receiver→attacker after stale-close defeated = 0.144",
+      "t": 1005850
+    },
+    {
+      "kind": "note",
+      "text": "attacker settle finalSeq=5  attacker_profit=-5  honest_profit=5",
+      "t": 1006050
+    },
+    {
+      "kind": "banner",
+      "text": "summary",
+      "t": 1006050
+    },
+    {
+      "kind": "note",
+      "text": "normal trust:   0.4164 → 0.9496",
+      "t": 1006050
+    },
+    {
+      "kind": "note",
+      "text": "attacker trust: 0.2597 → 0.144",
+      "t": 1006050
+    }
+  ]
+}

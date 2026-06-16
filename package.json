@@ -15,7 +15,9 @@
     "research:wsprobe": "node research/ws_probe.mjs",
     "test": "node server/src/ontology.test.mjs && bash scripts/run-e2e.sh",
     "test:ontology": "node server/src/ontology.test.mjs",
-    "test:e2e": "bash scripts/run-e2e.sh"
+    "test:e2e": "bash scripts/run-e2e.sh",
+    "test:payment": "bash payment-protocol/test/run-all.sh",
+    "demo:payment": "node payment-protocol/demo/client.mjs"
   },
   "dependencies": {
     "three": "^0.180.0",
