@@ -86,4 +86,10 @@ abeto Messenger 真正是: **Svelte 5 + Three.js WebGL** 客户端 + **uWebSocke
   - `public/screens/{social.png,planet.png}` 同步进 dist 让爬虫能抓。
   - `vite build` 后 `dist/{favicon.svg, index.html(2.86KB), screens/}` 全部就位,curl 验 200。
   - 渲染验证截图 `docs/screens/06-favicon.png` (zoom 384×384,scanline + glow 清晰)。
-- [ ] 性能压测:50 peers / room 看 latency。
+- [x] **性能压测**(2026-06-16 20:05,`scripts/loadtest.mjs`):
+  - 设置:本地 spawn server,50 个 ws client 全 join 同一 room,1 sender @ 20Hz 发 `{p,r,tag,t}` 给 49 recipients;丢 3s warmup 后采 10s steady。
+  - **9506 samples**:P50 **0.97ms** / P95 **1.50ms** / P99 **1.81ms** / max 2.60ms。
+  - 中继总流量 **951 frames/sec recv overall**(理论 49×20=980,实测 19.4 Hz 因为 sender setInterval 是软的)。
+  - 客户端进程堆 Δ **1.72 MB**(含 50 个 ws + 9506 sample 缓冲)。
+  - 通过阈值 P95<50ms(实际 P95 0.03×阈值)。
+  - 命令:`PEERS=50 STEADY_MS=10000 node scripts/loadtest.mjs`,exit 0 = pass。

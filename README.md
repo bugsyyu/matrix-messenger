@@ -221,12 +221,38 @@ node server/src/ontology.test.mjs    # surface: 14 ok, 0 fail
 PORT=3006 node server/src/index.mjs &
 node server/src/e2e.test.mjs         # ws relay: 8 ok
 node server/src/agent.test.mjs       # agent SDK: 6 ok
+
+# or in one shot:
+npm test                             # ontology + e2e + sdk, all green
 ```
 
 The build pipeline (e2e + agent) catches the kind of subtle bug that bit us
 during development: SLERP fallback when current and target are antipodal on
 the sphere, otherwise the cartesian step projects back onto the starting
 point and the agent appears to walk in place.
+
+## Performance
+
+50 peers in one room, one sender broadcasting at 20 Hz to the other 49 — on
+a single Node process on a laptop, over `ws://localhost`:
+
+| metric | value |
+|---|---|
+| peers connected | **50 / 50** in 323 ms |
+| broadcast latency **P50** | **0.97 ms** |
+| broadcast latency **P95** | **1.50 ms** |
+| broadcast latency **P99** | **1.81 ms** |
+| latency max | 2.60 ms |
+| recipient frames / sec | 951 (≈ 49 × 20 Hz) |
+| client heap Δ over 10 s | **1.72 MB** |
+| samples collected | 9506 (10 s steady, 3 s warmup discarded) |
+
+A room of 50 fits comfortably in fly.io's smallest 256 MB VM. Reproduce:
+
+```bash
+PEERS=50 STEADY_MS=10000 node scripts/loadtest.mjs
+# exit 0 if P95 < 50 ms; tweak PEERS / TICK_MS / WARMUP_MS via env
+```
 
 ---
 
