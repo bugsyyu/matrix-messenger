@@ -1,0 +1,12 @@
+node_modules
+.monitor
+.DS_Store
+*.log
+dist
+build
+.env
+.env.local
+.cache
+.vite
+playwright-report
+test-results
