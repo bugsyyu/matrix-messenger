@@ -80,5 +80,10 @@ abeto Messenger 真正是: **Svelte 5 + Three.js WebGL** 客户端 + **uWebSocke
   - 镜像 **91.8 MB**(content size),build 后 `docker run` 2s 启动,`/healthz` `/ontology` 200,e2e 8/8 + agent 6/6 在容器内全过。
   - WSL2 docker daemon stale lock 修了一次:`reset-failed docker.service && start`。
   - fly.toml:`internal_port 3005` + `/healthz` check + `auto_stop_machines` + 256MB VM。
-- [ ] favicon SVG。
+- [x] **favicon + og:meta + twitter card** (2026-06-16 19:55):
+  - `public/favicon.svg` 64×64 inline SVG:黑底 + CRT 绿 `>_` 终端光标 + 白高光点 + scanline + Gaussian glow。
+  - `client/index.html` 14 个 og + twitter meta(`og:type/site_name/title/description/image/{width,height,alt}/locale` + `twitter:{card=summary_large_image,title,description,image,image:alt}` + `theme-color`)。
+  - `public/screens/{social.png,planet.png}` 同步进 dist 让爬虫能抓。
+  - `vite build` 后 `dist/{favicon.svg, index.html(2.86KB), screens/}` 全部就位,curl 验 200。
+  - 渲染验证截图 `docs/screens/06-favicon.png` (zoom 384×384,scanline + glow 清晰)。
 - [ ] 性能压测:50 peers / room 看 latency。

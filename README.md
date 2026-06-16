@@ -1,6 +1,8 @@
+<p align="left"><img src="docs/screens/06-favicon.png" width="96" alt="Matrix Messenger favicon"></p>
+
 # Matrix Messenger
 
-> *"A small planet. Someone has to route the packets."*
+> *"A small planet. Someone — or some agent — has to route the packets."*
 
 A tiny shippable MMO: courier‑on‑a‑sphere meets the green CRT of *The Matrix*.
 Players (and AI agents) walk around a wireframe planet, pick up encrypted
