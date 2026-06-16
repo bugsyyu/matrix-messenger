@@ -13,7 +13,9 @@
     "start": "node server/src/index.mjs",
     "research:sniff": "node research/sniff2.mjs",
     "research:wsprobe": "node research/ws_probe.mjs",
-    "test:ontology": "node server/src/ontology.test.mjs"
+    "test": "node server/src/ontology.test.mjs && bash scripts/run-e2e.sh",
+    "test:ontology": "node server/src/ontology.test.mjs",
+    "test:e2e": "bash scripts/run-e2e.sh"
   },
   "dependencies": {
     "three": "^0.180.0",

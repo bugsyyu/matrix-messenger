@@ -70,9 +70,11 @@ abeto Messenger 真正是: **Svelte 5 + Three.js WebGL** 客户端 + **uWebSocke
   - 0 错误,0 console error。
 - 球面行走 SDK 修了一个 antipodal slerp bug(原 cartesian + 投影在大圆切线 = 0 处不收敛,改 SLERP 真球面插值)。
 
-## 阶段 5 — 待办
+## 阶段 5 — 进行中
 
-- [ ] README + 截图 + landing。
+- [x] **README.md** (2026-06-16 19:35) — 项目介绍 + 5 截图(docs/screens/)+ 跑法 + 架构 ASCII + 协议表 + 物理常数表 + agent SDK quickstart + repo layout + test 章节。强调 ontology + abeto‑alias seam,标"无 abeto 代码包含" 出处声明。
+- [x] `npm test` 一键 pipeline:`scripts/run-e2e.sh` 起临时 server :3007 → 跑 e2e + agent SDK,完赛 trap kill。28 assertions 全过(14 ontology + 8 ws + 6 sdk)。
+- [x] 截图迁移到 `docs/screens/`(README 引用稳定路径,与 research/visual 解耦)。
 - [ ] 部署脚本(Dockerfile / fly.toml / Cloud Run yaml)。
 - [ ] favicon SVG。
 - [ ] 性能压测:50 peers / room 看 latency。
